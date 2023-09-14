@@ -79,7 +79,7 @@ class Location {
 class Current {
   int? lastUpdatedEpoch;
   String? lastUpdated;
-  int? tempC;
+  double? tempC;
   double? tempF;
   int? isDay;
   Condition? condition;
@@ -87,19 +87,19 @@ class Current {
   double? windKph;
   int? windDegree;
   String? windDir;
-  int? pressureMb;
+  double? pressureMb;
   double? pressureIn;
-  int? precipMm;
-  int? precipIn;
+  double? precipMm;
+  double? precipIn;
   int? humidity;
   int? cloud;
   double? feelslikeC;
   double? feelslikeF;
-  int? visKm;
-  int? visMiles;
-  int? uv;
+  double? visKm;
+  double? visMiles;
+  double? uv;
   double? gustMph;
-  int? gustKph;
+  double? gustKph;
 
   Current(
       {this.lastUpdatedEpoch,
@@ -280,16 +280,16 @@ class Day {
   double? maxwindKph;
   double? totalprecipMm;
   double? totalprecipIn;
-  int? totalsnowCm;
+  double? totalsnowCm;
   double? avgvisKm;
-  int? avgvisMiles;
-  int? avghumidity;
+  double? avgvisMiles;
+  double? avghumidity;
   int? dailyWillItRain;
   int? dailyChanceOfRain;
   int? dailyWillItSnow;
   int? dailyChanceOfSnow;
   Condition? condition;
-  int? uv;
+  double? uv;
 
   Day(
       {this.maxtempC,
@@ -422,7 +422,7 @@ class Hour {
   double? windKph;
   int? windDegree;
   String? windDir;
-  int? pressureMb;
+  double? pressureMb;
   double? pressureIn;
   double? precipMm;
   double? precipIn;
@@ -440,11 +440,11 @@ class Hour {
   int? chanceOfRain;
   int? willItSnow;
   int? chanceOfSnow;
-  int? visKm;
-  int? visMiles;
+  double? visKm;
+  double? visMiles;
   double? gustMph;
   double? gustKph;
-  int? uv;
+  double? uv;
 
   Hour(
       {this.timeEpoch,
